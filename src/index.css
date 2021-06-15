@@ -1,42 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
-  font-family: 'Roboto Mono', monospace;
-  background-color: #0d1e26;
-  color:#41be6f;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#title h1{
-  margin-left: 40px;
+h1 {
+  margin-top: 30px;
   text-align: center;
-  font-weight: 200;
-  font-size: 40px;
-  border-bottom: 2px solid;
-}
-
-h2 {
-  color: #ff9718;
 }
 
 #GeneralInfo {
-  margin: 50px 20px;
-
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: 'Press Start 2P', cursive; 
+  display:flex;
+  flex-direction: column;
+  align-items: center; 
 }
 
 #GeneralInfo ul {
   list-style: none;
-  font-size: 20px;
+  margin: 0px 0px 20px 0px;
   padding: 0px;
-  margin-left: -20px;
 }
 
-.hidden {
-  visibility: hidden;
+#GeneralInfo ul li {
+  margin: 10px;
 }
 
-.visible {
-  visibility: visible;
+#GeneralInfo input {
+  padding: 5px;
+  width: 100%;
+}
+
+#WorkExperience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#WorkExperience .nes-field {
+  width: 100%
+}
+
+#WorkExperience .nes-input {
+  margin-bottom: 20px;
+  width: 100%
+}
+
+
+#WorkExperience .nes-field textarea{
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  margin: 10px;
 }
