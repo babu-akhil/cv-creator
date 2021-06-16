@@ -1,4 +1,5 @@
-{"homepage": "babu-akhil.github.io/cv-creator",
+{
+  "homepage": "http://babu-akhil.github.io/cv-creator",
   "name": "cv-creator",
   "version": "0.1.0",
   "private": true,
