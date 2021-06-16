@@ -1,8 +1,7 @@
-{
+{"homepage": "babu-akhil.github.io/cv-creator",
   "name": "cv-creator",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://babu-akhil.github.io/cv-creator",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-regular-svg-icons": "^5.15.3",
