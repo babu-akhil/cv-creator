@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/babu-akhil.github.io/cv-creator/static/css/main.a5959329.chunk.css",
+    "main.js": "/babu-akhil.github.io/cv-creator/static/js/main.21713d5f.chunk.js",
+    "main.js.map": "/babu-akhil.github.io/cv-creator/static/js/main.21713d5f.chunk.js.map",
+    "runtime-main.js": "/babu-akhil.github.io/cv-creator/static/js/runtime-main.5b15755d.js",
+    "runtime-main.js.map": "/babu-akhil.github.io/cv-creator/static/js/runtime-main.5b15755d.js.map",
+    "static/css/2.3c2d599a.chunk.css": "/babu-akhil.github.io/cv-creator/static/css/2.3c2d599a.chunk.css",
+    "static/js/2.d998c0c1.chunk.js": "/babu-akhil.github.io/cv-creator/static/js/2.d998c0c1.chunk.js",
+    "static/js/2.d998c0c1.chunk.js.map": "/babu-akhil.github.io/cv-creator/static/js/2.d998c0c1.chunk.js.map",
+    "index.html": "/babu-akhil.github.io/cv-creator/index.html",
+    "static/css/2.3c2d599a.chunk.css.map": "/babu-akhil.github.io/cv-creator/static/css/2.3c2d599a.chunk.css.map",
+    "static/css/main.a5959329.chunk.css.map": "/babu-akhil.github.io/cv-creator/static/css/main.a5959329.chunk.css.map",
+    "static/js/2.d998c0c1.chunk.js.LICENSE.txt": "/babu-akhil.github.io/cv-creator/static/js/2.d998c0c1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5b15755d.js",
+    "static/css/2.3c2d599a.chunk.css",
+    "static/js/2.d998c0c1.chunk.js",
+    "static/css/main.a5959329.chunk.css",
+    "static/js/main.21713d5f.chunk.js"
+  ]
+}
