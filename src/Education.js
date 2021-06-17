@@ -291,21 +291,23 @@ class EducationEntry extends Component {
               Duration: {startDateString} to {endDateString}
             </li>
           </ul>
-          <button
-            id={item.id}
-            className="nes-btn is-primary"
-            onClick={this.onEdit}
-          >
-            {" "}
-            Edit{" "}
-          </button>
-          <button
-            id={item.id}
-            className="nes-btn is-warning"
-            onClick={this.onDelete}
-          >
-            Delete{" "}
-          </button>
+          <div className="buttons">
+            <button
+              id={item.id}
+              className="nes-btn is-primary"
+              onClick={this.onEdit}
+            >
+              {" "}
+              Edit{" "}
+            </button>
+            <button
+              id={item.id}
+              className="nes-btn is-warning delete-btn"
+              onClick={this.onDelete}
+            >
+              Delete{" "}
+            </button>
+          </div>
         </div>
       );
     });

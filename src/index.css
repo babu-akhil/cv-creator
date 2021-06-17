@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 body {
   display: flex;
@@ -20,8 +20,8 @@ h1 {
 #GeneralInfo {
   margin-top: 30px;
   margin-bottom: 20px;
-  font-family: 'Press Start 2P', cursive; 
-  display:flex;
+  font-family: "Press Start 2P", cursive;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -49,22 +49,21 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: max(60vw, 537);
+  width: 50vw;
   padding: 20px 5vw;
   margin: 50px 0px;
 }
 
 #WorkExperience .nes-field {
-  width: 100%
+  width: 100%;
 }
 
 #WorkExperience .nes-input {
   margin-bottom: 20px;
-  width: 100%
+  width: 100%;
 }
 
-
-#WorkExperience .nes-field textarea{
+#WorkExperience .nes-field textarea {
   height: 150px;
   margin-bottom: 20px;
 }
@@ -92,11 +91,15 @@ h1 {
   padding: 0;
 }
 .WorkExperienceEntry ul li {
-  overflow:hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 10px;
 }
 
 .WorkExperienceEntry button {
   width: 90px;
+}
+
+.WorkExperienceEntry .delete-btn {
+  width: 120px;
 }
