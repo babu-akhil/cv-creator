@@ -1,4 +1,4 @@
-import { Component } from "react";
+import { Component, useState } from "react";
 class Education extends Component {
   constructor(props) {
     super(props);
@@ -19,6 +19,7 @@ class Education extends Component {
     this.handleSave = this.handleSave.bind(this);
     this.handleAdd = this.handleAdd.bind(this);
     this.handleEdit = this.handleEdit.bind(this);
+    this.handleDelete = this.handleDelete.bind(this);
   }
 
   handleChange(event) {
@@ -99,6 +100,14 @@ class Education extends Component {
       });
     });
   }
+  handleDelete(id) {
+    this.setState(() => {
+      let items = this.state.items;
+      const index = items.findIndex((item) => item.id === id);
+      let newItems = items.splice(index, 1);
+      this.setState({ items: newItems });
+    });
+  }
 
   render() {
     if (this.state.mode == "edit") {
@@ -158,7 +167,7 @@ class Education extends Component {
             <div id="startDate">
               <label htmlFor="startDate">Starting date: </label>
               <input
-                type="month"
+                type="date"
                 className="nes-input"
                 name="startDate"
                 id="startDateInput"
@@ -170,7 +179,7 @@ class Education extends Component {
             <div id="endDate">
               <label htmlFor="endDate">Graduation Date: </label>
               <input
-                type="month"
+                type="date"
                 className="nes-input"
                 name="endDate"
                 id="endDateInput"
@@ -210,6 +219,7 @@ class Education extends Component {
           <EducationEntry
             items={this.state.items}
             handleEdit={this.handleEdit}
+            handleDelete={this.handleDelete}
           />
           <div className="buttons">
             <button
@@ -231,10 +241,15 @@ class EducationEntry extends Component {
     super(props);
 
     this.onEdit = this.onEdit.bind(this);
+    this.onDelete = this.onDelete.bind(this);
   }
 
   onEdit(event) {
     this.props.handleEdit(event.target.id);
+  }
+
+  onDelete(event) {
+    this.props.handleDelete(event.target.id);
   }
 
   render() {
@@ -283,6 +298,13 @@ class EducationEntry extends Component {
           >
             {" "}
             Edit{" "}
+          </button>
+          <button
+            id={item.id}
+            className="nes-btn is-warning"
+            onClick={this.onDelete}
+          >
+            Delete{" "}
           </button>
         </div>
       );
